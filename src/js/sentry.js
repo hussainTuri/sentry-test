@@ -19,7 +19,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
 
   undefinedVar.addEventListener('click', function () {
     console.log(this.getAttribute('id'));
-    throw 'Var X1 is not defined!';
+    //throw 'Var X1 is not defined!';
   });
   undefinedFtn.addEventListener('click', function () {
     throw 'function X1 is not defined!';
