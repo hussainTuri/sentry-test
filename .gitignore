@@ -9,6 +9,7 @@
 .idea/
 bump
 
+
 # Ignore build files.
 view/css/bundle.css*
 view/css/admin.bundle.css*
