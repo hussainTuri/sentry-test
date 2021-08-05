@@ -2,7 +2,7 @@ import * as Sentry from "@sentry/browser";
 import { Integrations } from "@sentry/tracing";
 
 Sentry.init({
-  release: "abrar-test-proj@1.0.4",
+  release: "abrar-test-proj@1.0.5",
   environment: "production",
   dsn: "https://39dab08dd397470e813aceab745cf32b@o943964.ingest.sentry.io/5892878",
   integrations: [
