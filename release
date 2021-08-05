@@ -1,6 +1,6 @@
 #!/bin/sh
 
-VERSION=abrar-test-proj@1.0.6
+VERSION=abrar-test-proj@1.0.7
 sentry-cli releases new "$VERSION"
 # do your build steps here
 sentry-cli releases files "$VERSION" upload-sourcemaps /Users/abhu01/Projects/sentry/sentry-test/dist
