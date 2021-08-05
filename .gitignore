@@ -1,0 +1,26 @@
+/node_modules
+.vscode
+!.vscode/tasks.json
+/.idea
+*.DS_Store
+/dist
+
+.env
+.idea/
+
+# Ignore build files.
+view/css/bundle.css*
+view/css/admin.bundle.css*
+
+public/*/js/bundle.js*
+public/common/js/chunks
+tmp
+
+view/content/*/filter.js
+view/scss/compiled
+public/*/css/dist
+.eslintcache
+
+tests/cypress/screenshots/
+
+npm-debug.log

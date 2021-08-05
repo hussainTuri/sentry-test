@@ -1,0 +1,41 @@
+{
+  "name": "sentry-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "gulp build",
+    "sourcemaps:push": "webpack --config webpack.config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hussainTuri/sentry-test.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hussainTuri/sentry-test/issues"
+  },
+  "homepage": "https://github.com/hussainTuri/sentry-test#readme",
+  "dependencies": {
+    "@sentry/browser": "^6.10.0",
+    "@sentry/tracing": "^6.10.0",
+    "esm": "^3.2.25"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.15.0",
+    "@babel/preset-env": "^7.15.0",
+    "@sentry/webpack-plugin": "^1.17.1",
+    "babelify": "^10.0.0",
+    "browserify": "^17.0.0",
+    "del": "^6.0.0",
+    "gulp": "^4.0.2",
+    "gulp-babel": "^8.0.0",
+    "gulp-rename": "^2.0.0",
+    "gulp-sourcemaps": "^3.0.0",
+    "vinyl-buffer": "^1.0.1",
+    "vinyl-source-stream": "^2.0.0",
+    "webpack": "^5.48.0",
+    "webpack-cli": "^4.7.2"
+  }
+}
