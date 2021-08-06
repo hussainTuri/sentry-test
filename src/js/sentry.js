@@ -20,7 +20,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
   undefinedVar.addEventListener('click', function () {
     console.log(this.getAttribute('id'));
     //throw 'Var X1 is not defined!';
-    Sentry.init1();
+    Sentry.init2();
   });
   undefinedFtn.addEventListener('click', function () {
     throw 'function X1 is not defined!';
