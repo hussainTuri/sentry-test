@@ -22,6 +22,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
   });
   undefinedFtn.addEventListener('click', function () {
     //console.log(this.getAttribute('id'));
+    throw 'You touch me and i spit errors';
   });
 
 });
