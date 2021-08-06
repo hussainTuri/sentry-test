@@ -12,25 +12,16 @@ Sentry.init({
   tracesSampleRate: 1.0,
 });
 
-function x() {
-  //throw 'Var X1 is not defined!';
-  throw 'Houston!! we have an error';
-}
-
 window.addEventListener('DOMContentLoaded', (event) => {
   console.log('DOM fully loaded and parsed');
   let undefinedVar = document.getElementById('undefined-var');
   let undefinedFtn = document.getElementById('undefined-ftn');
 
   undefinedVar.addEventListener('click', function () {
-    //console.log(this.getAttribute('id'));
-    //throw 'Var X1 is not defined!';
-    //Sentry.init3();
-    x();
+    console.log(this.getAttribute('id'));
   });
   undefinedFtn.addEventListener('click', function () {
-    throw 'function X1 is not defined!';
-    console.log(this.getAttribute('id'));
+    //console.log(this.getAttribute('id'));
   });
 
 });
