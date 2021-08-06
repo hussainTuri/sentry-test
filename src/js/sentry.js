@@ -14,7 +14,7 @@ Sentry.init({
 
 function x() {
   //throw 'Var X1 is not defined!';
-  x.y;
+  a = y.ysssdf.enfas;
 }
 
 window.addEventListener('DOMContentLoaded', (event) => {
