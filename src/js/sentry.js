@@ -2,7 +2,7 @@ import * as Sentry from '@sentry/browser';
 import { Integrations } from '@sentry/tracing';
 
 Sentry.init({
-  release: 'abrar-test-proj@1.0.23',
+  release: 'abrar-test-proj@1.0.24',
   environment: 'production',
   dsn: 'https://39dab08dd397470e813aceab745cf32b@o943964.ingest.sentry.io/5892878',
   integrations: [
@@ -14,7 +14,7 @@ Sentry.init({
 
 function x() {
   //throw 'Var X1 is not defined!';
-  throw 'Houston! we have an error';
+  throw 'Houston!! we have an error';
 }
 
 window.addEventListener('DOMContentLoaded', (event) => {
