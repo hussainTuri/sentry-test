@@ -1,10 +1,10 @@
 #!/bin/sh
 
-VERSION=abrar-test-proj@1.0.14
+VERSION=abrar-test-proj@1.0.15
 sentry-cli releases new "$VERSION"
 # do your build steps here
-sentry-cli releases files "$VERSION" upload-sourcemaps /Users/abhu01/Projects/sentry/sentry-test/dist/scripts/bundle.js.map
-#sentry-cli releases files "1.0.13" upload-sourcemaps /Users/abhu01/Projects/sentry/sentry-test/dist/scripts/bundle.js.map
+#sentry-cli releases files "$VERSION" upload-sourcemaps /Users/abhu01/Projects/sentry/sentry-test/dist/scripts/bundle.js.map
+sentry-cli releases files "1.0.15" upload-sourcemaps /Users/abhu01/Projects/sentry/sentry-test/dist/scripts/bundle.js.map
 sentry-cli releases set-commits --auto $VERSION
 # once you are done, finalize
 sentry-cli releases finalize "$VERSION"
