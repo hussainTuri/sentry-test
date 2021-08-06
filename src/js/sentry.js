@@ -2,7 +2,7 @@ import * as Sentry from '@sentry/browser';
 import { Integrations } from '@sentry/tracing';
 
 Sentry.init({
-  release: 'abrar-test-proj@1.0.27',
+  release: 'abrar-test-proj@1.0.28',
   environment: 'production',
   dsn: 'https://39dab08dd397470e813aceab745cf32b@o943964.ingest.sentry.io/5892878',
   integrations: [
@@ -22,7 +22,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
   });
   undefinedFtn.addEventListener('click', function () {
     //console.log(this.getAttribute('id'));
-    throw 'You touch me and i spit errors!!';
+    throw 'You touch me and i spit errors!!!';
   });
 
 });

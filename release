@@ -1,7 +1,10 @@
 #!/bin/sh
 
-VERSION=abrar-test-proj@1.0.27
-sentry-cli releases new "$VERSION"
+VERSION=abrar-test-proj@1.0.28
+PROJECT=abrar-test
+ENV=production
+
+sentry-cli releases new -p $PROJECT "$VERSION"
 # do your build steps here
 
 // both the source files and source maps must be uploaded
@@ -10,3 +13,5 @@ sentry-cli releases files "$VERSION" upload-sourcemaps /Users/abhu01/Projects/se
 sentry-cli releases set-commits --auto $VERSION
 # once you are done, finalize
 sentry-cli releases finalize "$VERSION"
+
+sentry-cli releases deploys "$VERSION" new -e $ENV
