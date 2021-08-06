@@ -1,6 +1,6 @@
 #!/bin/sh
 
-VERSION=abrar-test-proj@1.0.24
+VERSION=abrar-test-proj@1.0.25
 sentry-cli releases new "$VERSION"
 # do your build steps here
 
