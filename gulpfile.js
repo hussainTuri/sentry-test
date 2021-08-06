@@ -4,7 +4,9 @@ const babelify = require('babelify');
 const source = require('vinyl-source-stream');
 const del = require('del');
 const sourcemaps = require('gulp-sourcemaps');
-const buffer      = require("vinyl-buffer")
+const buffer      = require("vinyl-buffer");
+const uglify = require("gulp-uglify");
+const filter = require('gulp-filter');
 
 // To prevent rewriting the source and build folder locations
 const paths = {
@@ -29,8 +31,11 @@ function javascriptBuild() {
       .pipe(buffer())
       .pipe(sourcemaps.init())
       .pipe(sourcemaps.write('./'))
-
+      // Stream has now two file, filter out map file
+      .pipe(filter('**/*.js'))
+      .pipe(uglify())
       // Then write the resulting files to a folder
+      .pipe(sourcemaps.write('./'))
       .pipe(gulp.dest(`${paths.build}/scripts`))
   );
   // Start by calling browserify with our entry pointing to our main javascript file
