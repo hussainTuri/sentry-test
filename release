@@ -3,7 +3,7 @@
 VERSION=abrar-test-proj@1.0.10
 sentry-cli releases new "$VERSION"
 # do your build steps here
-sentry-cli releases files "$VERSION" upload-sourcemaps /Users/abhu01/Projects/sentry/sentry-test/dist
+sentry-cli releases files "$VERSION" upload-sourcemaps /Users/abhu01/Projects/sentry/sentry-test/dist/scripts/bundle.js.map
 sentry-cli releases set-commits --auto $VERSION
 # once you are done, finalize
 sentry-cli releases finalize "$VERSION"
