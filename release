@@ -7,11 +7,12 @@ ENV=production
 sentry-cli releases new -p $PROJECT "$VERSION"
 # do your build steps here
 
-// both the source files and source maps must be uploaded
+# both the source files and source maps must be uploaded
 sentry-cli releases files "$VERSION" upload-sourcemaps /Users/abhu01/Projects/sentry/sentry-test/dist/scripts/
 
 sentry-cli releases set-commits --auto $VERSION
 # once you are done, finalize
 sentry-cli releases finalize "$VERSION"
 
+# I think it would be better if this step is done after deploy
 sentry-cli releases deploys "$VERSION" new -e $ENV

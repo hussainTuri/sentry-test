@@ -1,2 +1,10 @@
 #!/bin/sh
-sentry-cli releases files "1.0.3" upload-sourcemaps /Users/abhu01/Projects/sentry/sentry-test/dist
+##sentry-cli releases files "1.0.3" upload-sourcemaps /Users/abhu01/Projects/sentry/sentry-test/dist
+
+ARR=
+array=( one two three )
+for i in "${array[@]}"
+do
+	echo $i
+done
+

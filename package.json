@@ -19,8 +19,12 @@
   "homepage": "https://github.com/hussainTuri/sentry-test#readme",
   "dependencies": {
     "@sentry/browser": "^6.10.0",
+    "@sentry/cli": "^1.68.0",
     "@sentry/tracing": "^6.10.0",
-    "esm": "^3.2.25"
+    "dotenv": "^10.0.0",
+    "esm": "^3.2.25",
+    "node": "^16.6.1",
+    "yargs": "^17.1.0"
   },
   "devDependencies": {
     "@babel/core": "^7.15.0",
